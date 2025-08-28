@@ -2,168 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon - Hesham Store</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Hesham Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            text-align: center;
+        }
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      color: #fff;
-      background: linear-gradient(-45deg, #667eea, #764ba2, #ff758c, #ff7eb3);
-      background-size: 400% 400%;
-      animation: gradientBG 10s ease infinite;
-    }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
 
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
 
-    .container {
-      max-width: 600px;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
 
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
+        .coming-soon {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
-    }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
 
-    .coming-soon {
-      font-size: 1.5rem;
-      font-weight: 600;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 12px 25px;
-      border-radius: 12px;
-      display: inline-block;
-      animation: pulse 1.8s infinite;
-    }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
 
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.08);
-        opacity: 0.85;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
 
-    .newsletter {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .newsletter input {
-      padding: 10px 15px;
-      border-radius: 8px;
-      border: none;
-      outline: none;
-      flex: 1;
-      max-width: 250px;
-    }
-
-    .newsletter button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      background: #ff758c;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .newsletter button:hover {
-      background: #ff4d6d;
-    }
-
-    .social {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .social a {
-      color: #fff;
-      font-size: 1.5rem;
-      transition: 0.3s;
-    }
-
-    .social a:hover {
-      color: #ffeb3b;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>🚀 Hesham Store</h1>
-    <p>We’re working hard to launch our new eCommerce experience.</p>
-    <div class="coming-soon">✨ Coming Soon ✨</div>
-
-    <div class="newsletter">
-      <input type="email" placeholder="Enter your email" />
-      <button>Notify Me</button>
+    <div class="container">
+        <h1>🚀 Hesham Store</h1>
+        <p>We’re working hard to launch our new eCommerce experience.</p>
+        <div class="coming-soon">✨ Coming Soon ✨</div>
+        <footer>
+            &copy; 2025 Hesham Store. All rights reserved.
+        </footer>
     </div>
-
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-
-    <footer>
-      &copy; 2025 Hesham Store. All rights reserved.
-    </footer>
-  </div>
-
-  <!-- FontAwesome CDN -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
